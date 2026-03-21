@@ -366,3 +366,5 @@ textarea { resize: vertical; min-height: 150px; }
   .btn { width: 100%; }
   .hero-actions, .cta-actions, .split-actions { width: 100%; }
 }
+
+.logo img { height: 42px; width: auto; }
