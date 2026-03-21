@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PeakLifeRx | Pharmaceutical & Wellness Procurement Platform</title>
+  <title>PeakLifeRx | 503B & Wellness Procurement Platform</title>
   <meta name="description" content="PeakLifeRx is a technology-enabled B2B procurement platform connecting licensed providers, resellers, and vetted 503B supply partners through one streamlined ordering experience." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="PeakLifeRx | 503B & Wellness Procurement Platform" />
+  <meta property="og:description" content="Connect with FDA-registered 503B supply partners through one secure, compliant ordering platform built for clinics, resellers, and wellness operators." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- ── Netlify pre-render form detection (hidden, must match visible form fields) ── -->
+  <form name="partner-application" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text"   name="name" />
+    <input type="email"  name="email" />
+    <input type="text"   name="company" />
+    <input type="tel"    name="phone" />
+    <select name="type"><option>Clinic / Provider</option></select>
+    <textarea name="message"></textarea>
+  </form>
+
 </head>
 <body>
-<form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact" />
-  <p style="display:none;">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
-  <input type="text" name="name" placeholder="Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <textarea name="message" placeholder="Message"></textarea>
-  <button type="submit">Submit</button>
-</form>
-
   <div class="site-shell">
+
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════════ -->
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="#top" class="brand" aria-label="PeakLifeRx home">
@@ -46,22 +52,26 @@
         <a href="#why">Why Choose Us</a>
         <a href="#audiences">Who We Work With</a>
         <a href="#partner-form">Apply</a>
-        <a href="https://Sinqops.store">Get Access</a>
+        <a href="http://sinqops.store/peakliferx/register">Get Access</a>
         <a href="https://my.sinqops.com">Sign In</a>
       </div>
     </header>
 
     <main id="top">
+
+      <!-- ═══════════════════════════ HERO ═════════════════════════════════ -->
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">Technology-enabled B2B pharmaceutical platform</div>
             <h1>Your Trusted Partner in 503B &amp; Wellness Procurement</h1>
             <p class="hero-text">
-              PeakLifeRx connects licensed providers, resellers, and supply partners through one streamlined platform built for compliant sourcing, reliable inventory access, and cleaner operational workflows.
+              PeakLifeRx connects licensed providers, resellers, and supply partners through one
+              streamlined platform built for compliant sourcing, reliable inventory access, and
+              cleaner operational workflows.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://Sinqops.store">Get Started</a>
+              <a class="btn btn-primary" href="http://sinqops.store/peakliferx/register">Get Started</a>
               <a class="btn btn-secondary" href="#partner-form">Apply to Partner</a>
             </div>
             <ul class="hero-points">
@@ -75,7 +85,9 @@
               <div class="hero-card-label">Built for modern wellness operators</div>
               <h2>Streamlining the path from supplier to provider</h2>
               <p>
-                Access licensed, compliant products through a platform designed to reduce friction, support consistent product availability, and keep pricing and catalog details behind authenticated access.
+                Access licensed, compliant products through a platform designed to reduce friction,
+                support consistent product availability, and keep pricing and catalog details
+                behind authenticated access.
               </p>
               <div class="hero-mini-grid">
                 <div>
@@ -92,7 +104,8 @@
         </div>
       </section>
 
-      <section class="trust-strip">
+      <!-- ═══════════════════════ TRUST STRIP ══════════════════════════════ -->
+      <section class="trust-strip" aria-label="Trust indicators">
         <div class="container trust-items">
           <span>FDA-registered 503B supply partners</span>
           <span>Secure digital ordering workflow</span>
@@ -101,107 +114,128 @@
         </div>
       </section>
 
+      <!-- ═══════════════════════ HOW IT WORKS ═════════════════════════════ -->
       <section class="section" id="how">
         <div class="container section-head narrow-center">
           <div class="eyebrow">How it works</div>
           <h2>Get Started in Three Simple Steps</h2>
-          <p>Simple, clear onboarding wins. This follows the strongest structural cue from PrimeCare’s site while adapting the positioning to PeakLifeRx’s technology-platform message. </p>
+          <p>From application to active ordering, our streamlined onboarding process gets your
+             clinic or partner account up and running quickly — without unnecessary friction.</p>
         </div>
         <div class="container steps-grid">
           <article class="step-card">
             <div class="step-number">01</div>
             <h3>Request Access</h3>
-            <p>Licensed providers, reseller partners, and qualified applicants submit their information to begin onboarding.</p>
+            <p>Licensed providers, reseller partners, and qualified applicants submit their
+               information to begin the onboarding process.</p>
           </article>
           <article class="step-card">
             <div class="step-number">02</div>
             <h3>Get Approved</h3>
-            <p>Our team reviews credentials, fit, and onboarding requirements before account access is created.</p>
+            <p>Our team reviews credentials, fit, and onboarding requirements before account
+               access is created and activated.</p>
           </article>
           <article class="step-card">
             <div class="step-number">03</div>
             <h3>Start Ordering</h3>
-            <p>Approved users can access the platform, browse available offerings, and move through a more streamlined ordering flow.</p>
+            <p>Approved users access the platform, browse available offerings, and move through
+               a streamlined, centralized ordering flow.</p>
           </article>
         </div>
       </section>
 
+      <!-- ════════════════════════ WHY PEAKLIFERX ═══════════════════════════ -->
       <section class="section section-dark" id="why">
         <div class="container section-head">
           <div class="eyebrow">Why choose PeakLifeRx</div>
           <h2>A Smarter Way to Source Wellness Products</h2>
           <p>
-            PrimeCare’s core value stack is solid: reliability, compliance, streamlined ordering, and partnership. This version follows that framework more closely, while sharpening the message around PeakLifeRx as a procurement platform rather than a generic distributor. 
+            We built PeakLifeRx around four pillars that matter most to the clinics, resellers,
+            and supply partners who use our platform every day.
           </p>
         </div>
         <div class="container feature-grid">
           <article class="feature-card">
             <h3>Reliability You Can Count On</h3>
-            <p>Access a vetted network designed to support more consistent inventory availability and dependable fulfillment for active clinical programs.</p>
+            <p>Access a vetted network designed to support consistent inventory availability
+               and dependable fulfillment for active clinical programs.</p>
           </article>
           <article class="feature-card">
             <h3>Compliance at Every Step</h3>
-            <p>From sourcing posture to account approval, PeakLifeRx is framed around licensed access, documentation, and a more conservative clinical workflow.</p>
+            <p>From sourcing posture to account approval, PeakLifeRx is built around licensed
+               access, documentation, and a professional clinical workflow.</p>
           </article>
           <article class="feature-card">
             <h3>Streamlined Ordering</h3>
-            <p>Replace scattered calls, back-and-forth emails, and fragmented vendor management with one digital platform and one cleaner process.</p>
+            <p>Replace scattered calls, back-and-forth emails, and fragmented vendor management
+               with one digital platform and one cleaner process.</p>
           </article>
           <article class="feature-card">
             <h3>Partnership Over Transactions</h3>
-            <p>PeakLifeRx is built to support clinic growth, supplier relationships, and reseller expansion through a shared infrastructure model.</p>
+            <p>PeakLifeRx is built to support clinic growth, supplier relationships, and
+               reseller expansion through a shared infrastructure model.</p>
           </article>
         </div>
       </section>
 
+      <!-- ════════════════════════ AUDIENCES ════════════════════════════════ -->
       <section class="section section-gradient" id="audiences">
         <div class="container section-head">
           <div class="eyebrow">Who we work with</div>
           <h2>Built for Health &amp; Wellness Providers, Partners, and Resellers</h2>
           <p>
-            PrimeCare segments the audience well. Keeping that structure makes sense. The upgrade here is clearer language, stronger CTAs, and a direct path for reseller and sales applicants. 
+            Whether you're running a clinic, operating a 503B facility, or building a sales
+            network — PeakLifeRx has a clear path for you.
           </p>
         </div>
         <div class="container audience-grid">
           <article class="audience-card highlight">
             <div class="audience-icon">🏥</div>
             <h3>Clinics &amp; Wellness Providers</h3>
-            <p>Access a reliable, efficient sourcing network designed to help your practice maintain product availability without unnecessary complexity.</p>
-            <a class="text-link" href="https://Sinqops.store">Get Access</a>
+            <p>Access a reliable, efficient sourcing network designed to help your practice
+               maintain product availability without unnecessary complexity.</p>
+            <a class="text-link" href="http://sinqops.store/peakliferx/register">Get Access →</a>
           </article>
           <article class="audience-card">
             <div class="audience-icon">🏭</div>
             <h3>Manufacturers &amp; 503B Facilities</h3>
-            <p>Partner with a trusted distribution platform that understands provider relationships, compliant positioning, and demand from active clinics.</p>
-            <a class="text-link" href="mailto:?subject=PeakLifeRx%20Partner%20Inquiry">Contact Us</a>
+            <p>Partner with a trusted distribution platform that understands provider
+               relationships, compliant positioning, and active clinic demand.</p>
+            <a class="text-link" href="#partner-form">Apply to Partner →</a>
           </article>
           <article class="audience-card">
             <div class="audience-icon">📈</div>
-            <h3>Resellers / Sales</h3>
-            <p>Join PeakLifeRx as a reseller or sales partner and grow your own network of clinics while leveraging our platform, supplier relationships, and infrastructure.</p>
-            <a class="text-link" href="#partner-form">Apply Now</a>
+            <h3>Resellers &amp; Sales Partners</h3>
+            <p>Join PeakLifeRx as a reseller or sales partner and grow your own network of
+               clinics while leveraging our platform and supplier relationships.</p>
+            <a class="text-link" href="#partner-form">Apply Now →</a>
           </article>
         </div>
       </section>
 
+      <!-- ════════════════════════ PLATFORM SPLIT ═══════════════════════════ -->
       <section class="section section-dark split-section">
         <div class="container split-grid align-center">
           <div>
             <div class="eyebrow">Platform overview</div>
             <h2>Streamlining the Path from Manufacturer to Provider</h2>
             <p>
-              PeakLifeRx is a B2B procurement platform built to streamline how medical spas, clinics, telehealth operators, and wellness programs source high-demand pharmaceuticals and wellness products.
+              PeakLifeRx is a B2B procurement platform built to streamline how medical spas,
+              clinics, telehealth operators, and wellness programs source high-demand
+              pharmaceuticals and wellness products.
             </p>
             <p>
-              We are not positioning the company like a storefront. We are positioning it as infrastructure: one system connecting supply-side partners with licensed buyers through a more scalable workflow.
+              We operate as infrastructure — one system connecting supply-side partners with
+              licensed buyers through a scalable, authenticated workflow that keeps pricing and
+              catalog details where they belong: behind a secure login.
             </p>
             <div class="split-actions">
-              <a class="btn btn-primary" href="https://Sinqops.store">Get Access</a>
+              <a class="btn btn-primary" href="http://sinqops.store/peakliferx/register">Get Access</a>
               <a class="btn btn-secondary" href="#partner-form">Talk to Us</a>
             </div>
           </div>
           <div class="callout-card large-callout">
-            <h3>What this means for visitors</h3>
+            <h3>What this means for you</h3>
             <ul class="check-list">
               <li>Clinics see a cleaner path to inventory access</li>
               <li>Suppliers see a serious distribution partner</li>
@@ -212,47 +246,106 @@
         </div>
       </section>
 
+      <!-- ══════════════════════════ CTA BAND ═══════════════════════════════ -->
       <section class="section cta-band">
         <div class="container cta-panel">
           <div>
             <div class="eyebrow">Marketplace access</div>
             <h2>Apply to Join the PeakLifeRx Marketplace</h2>
-            <p>Become part of a professional marketplace built for clinics, sourcing partners, resellers, and sales operators looking for compliant, reliable growth.</p>
+            <p>Become part of a professional marketplace built for clinics, sourcing partners,
+               resellers, and sales operators looking for compliant, reliable growth.</p>
           </div>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="https://Sinqops.store">Apply Now</a>
+            <a class="btn btn-primary" href="http://sinqops.store/peakliferx/register">Apply Now</a>
             <a class="btn btn-secondary" href="#partner-form">Partner / Sales Inquiry</a>
           </div>
         </div>
       </section>
 
+      <!-- ════════════════════════ PARTNER FORM ═════════════════════════════ -->
       <section class="section" id="partner-form">
         <div class="container section-head narrow-center">
           <div class="eyebrow">Partner / sales application</div>
           <h2>Work With PeakLifeRx</h2>
-          <p>Give potential resellers, sales reps, and supply partners a clean place to raise their hand without disrupting the clinic signup flow.</p>
+          <p>Resellers, sales reps, 503B facilities, and supply partners — submit your information
+             below and our team will follow up within one business day.</p>
         </div>
         <div class="container form-layout">
+
+          <!-- ── Visible Netlify form ──────────────────────────────────────── -->
           <div class="form-card">
-            <section id="contact">
-<form name="contact" method="POST" data-netlify="true" netlify>
-  <input type="hidden" name="form-name" value="contact" />
-  <input type="text" name="name" placeholder="Name" required />
-  <input type="email" name="email" placeholder="Email" required />
-  <textarea name="message" placeholder="Message"></textarea>
-  <button type="submit">Submit</button>
-</form>
-</section>
+            <form
+              name="partner-application"
+              method="POST"
+              action="/thank-you.html"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="partner-application" />
+              <!-- Honeypot (spam protection) -->
+              <p class="hidden-field" aria-hidden="true">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-grid">
+                <label class="full-width">
+                  Full Name *
+                  <input type="text" name="name" placeholder="Jane Smith" required />
+                </label>
+                <label>
+                  Email Address *
+                  <input type="email" name="email" placeholder="jane@example.com" required />
+                </label>
+                <label>
+                  Phone Number
+                  <input type="tel" name="phone" placeholder="+1 (555) 000-0000" />
+                </label>
+                <label class="full-width">
+                  Company / Practice Name
+                  <input type="text" name="company" placeholder="Your clinic or business name" />
+                </label>
+                <label class="full-width">
+                  I am a…
+                  <select name="type">
+                    <option value="">— Select your role —</option>
+                    <option value="clinic">Clinic / Wellness Provider</option>
+                    <option value="reseller">Reseller / Sales Partner</option>
+                    <option value="manufacturer">Manufacturer / 503B Facility</option>
+                    <option value="other">Other</option>
+                  </select>
+                </label>
+                <label class="full-width">
+                  Message (optional)
+                  <textarea name="message" placeholder="Tell us a bit about your practice or what you're looking for..."></textarea>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">Submit Application</button>
+            </form>
           </div>
+
+          <!-- ── Side info panel ──────────────────────────────────────────── -->
           <aside class="side-panel">
             <div class="info-card">
-              <h3></h3>
-              <ul>
-                <li>
+              <h3>What happens next?</h3>
+              <ul class="check-list">
+                <li>Our team reviews your application within 1 business day</li>
+                <li>We'll reach out via email to discuss next steps</li>
+                <li>Approved accounts receive portal access and onboarding details</li>
+                <li>Questions? Email us at <a href="mailto:info@peakliferx.com" style="color:var(--blue-2)">info@peakliferx.com</a></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3>Already have an account?</h3>
+              <p style="color:var(--muted); margin: 8px 0 16px;">Sign in to access your dashboard, browse the full catalog, and manage orders.</p>
+              <a class="btn btn-secondary" href="https://my.sinqops.com">Sign In →</a>
+            </div>
           </aside>
+
         </div>
       </section>
 
+      <!-- ══════════════════════════ FAQ ════════════════════════════════════ -->
       <section class="section section-gradient-light" id="faq">
         <div class="container section-head narrow-center">
           <div class="eyebrow">FAQ</div>
@@ -261,24 +354,39 @@
         <div class="container faq-list">
           <details>
             <summary>Do you list product pricing publicly?</summary>
-            <p>No. Detailed product visibility and pricing are kept behind a secure sign-up and login flow.</p>
+            <p>No. Detailed product visibility and pricing are kept behind a secure sign-up and
+               login flow to ensure only licensed, approved accounts have access.</p>
           </details>
           <details>
             <summary>Who can request access?</summary>
-            <p>Licensed clinics and wellness providers can request marketplace access. Manufacturers, 503B facilities, resellers, and sales applicants can use the partner form.</p>
+            <p>Licensed clinics and wellness providers can request marketplace access via our
+               registration page. Manufacturers, 503B facilities, resellers, and sales applicants
+               can use the partner application form above.</p>
           </details>
           <details>
-            <summary>Is this a pharmacy?</summary>
-            <p>No. PeakLifeRx is positioned as a technology-enabled procurement platform connecting licensed buyers and supply partners through a centralized workflow.</p>
+            <summary>Is PeakLifeRx a pharmacy?</summary>
+            <p>No. PeakLifeRx is a technology-enabled procurement platform that connects licensed
+               buyers with vetted supply partners through a centralized digital workflow. We do
+               not manufacture or dispense medications.</p>
           </details>
           <details>
             <summary>How do reseller and sales applications work?</summary>
-            <p>Use the partner application form to submit your information. That creates an inbound path for reseller partnerships and independent sales opportunities.</p>
+            <p>Use the partner application form to submit your information. Our team will review
+               your application and reach out within one business day to discuss fit, onboarding,
+               and next steps.</p>
+          </details>
+          <details>
+            <summary>How quickly can I get approved?</summary>
+            <p>Most applications are reviewed within 1 business day. Approval timelines vary
+               depending on credential verification and account type, but we aim to keep the
+               process fast and friction-free.</p>
           </details>
         </div>
       </section>
+
     </main>
 
+    <!-- ═══════════════════════════ FOOTER ══════════════════════════════════ -->
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
@@ -289,22 +397,29 @@
               <div class="brand-tag">One platform. Multiple supply paths. Cleaner growth.</div>
             </div>
           </div>
-          <p class="footer-copy">PeakLifeRx is a technology-enabled B2B procurement platform connecting manufacturers, resellers, and licensed providers through one streamlined workflow.</p>
+          <p class="footer-copy">PeakLifeRx is a technology-enabled B2B procurement platform
+             connecting manufacturers, resellers, and licensed providers through one streamlined
+             workflow.</p>
         </div>
         <div>
-          <h4>Actions</h4>
-          <a href="https://Sinqops.store">Get Access</a>
+          <h4>Quick Links</h4>
+          <a href="http://sinqops.store/peakliferx/register">Get Access</a>
           <a href="https://my.sinqops.com">Sign In</a>
           <a href="#partner-form">Apply to Partner</a>
+          <a href="#faq">FAQ</a>
         </div>
         <div>
           <h4>Contact</h4>
-          <a href="mailto:"></a>
+          <a href="mailto:info@peakliferx.com">info@peakliferx.com</a>
           <span>PeakLifeRx.com</span>
+          <span style="margin-top:8px; font-size:0.82rem;">
+            © 2025 PeakLifeRx. All rights reserved.
+          </span>
         </div>
       </div>
     </footer>
-  </div>
+
+  </div><!-- /site-shell -->
 
   <script src="script.js"></script>
 </body>

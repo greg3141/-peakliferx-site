@@ -1,5 +1,5 @@
 const menuButton = document.querySelector('.menu-toggle');
-const mobileNav = document.querySelector('.mobile-nav');
+const mobileNav  = document.querySelector('.mobile-nav');
 
 if (menuButton && mobileNav) {
   menuButton.addEventListener('click', () => {
