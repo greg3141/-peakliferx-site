@@ -328,11 +328,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .narrow-center { text-align: center; }
 .narrow-center p { margin-left: auto; margin-right: auto; }
 
-/* ── CTA below steps ────────────────────────────────────────────────────── */
-.cta-below-steps {
-  margin-top: 36px;
-  text-align: center;
-}
+
 
 /* ── Grid layouts ───────────────────────────────────────────────────────── */
 .steps-grid,
@@ -421,8 +417,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .large-callout { padding: 30px; }
 .large-callout ul { display: grid; gap: 12px; }
 
-/* ── CTA band ───────────────────────────────────────────────────────────── */
-.cta-band { padding-top: 0; }
+/* ── CTA panel (used in form section) ──────────────────────────────────── */
 .cta-panel {
   display: flex;
   gap: 20px;
@@ -576,3 +571,17 @@ details[open] summary::after { content: "−"; }
 
 /* ── Utility ─────────────────────────────────────────────────────────────── */
 .logo img { height: 42px; width: auto; }
+
+/* ── Brand logo (replaces PL mark) ─────────────────────────────────────── */
+.brand-logo {
+  height: 48px;
+  width: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.footer-logo {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
