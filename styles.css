@@ -165,10 +165,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-bottom: 18px;
 }
 .eyebrow::before {
-  content: "";
-  width: 28px;
-  height: 1px;
-  background: rgba(138, 198, 255, 0.7);
+  content: none;
 }
 
 /* ── Buttons ────────────────────────────────────────────────────────────── */
