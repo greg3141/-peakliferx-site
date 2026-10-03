@@ -1,38 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Signature - Greg McCranie</title>
-  <style>
-    body { margin: 0; padding: 0; background: #fff; font-family: Arial, Helvetica, sans-serif; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Email signatures | Greg McCranie</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f8;color:#152b42;font:15px/1.5 Arial,Helvetica,sans-serif}main{max-width:1100px;margin:auto;padding:48px 24px}.eyebrow{color:#54718e;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}h1{font-size:36px;line-height:1.2;margin:8px 0 12px}h2{font-size:20px;margin:0 0 20px}.intro{color:#53677b;max-width:650px}.companies{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0}.companies button{background:white;color:#29445f;border:1px solid #cad7e3}.companies button[aria-pressed="true"]{background:#123e63;color:white;border-color:#123e63}button,a.download{font:inherit;font-weight:bold;padding:11px 18px;border-radius:8px;cursor:pointer}.layout{display:grid;grid-template-columns:320px 1fr;gap:24px}.panel{background:white;border:1px solid #dbe4ed;border-radius:14px;padding:24px;box-shadow:0 8px 30px #19314a08}label{display:block;margin-top:14px;font-weight:bold;font-size:13px}input{display:block;width:100%;font:inherit;color:#152b42;border:1px solid #c6d3df;border-radius:6px;padding:9px;margin-top:5px}.preview{overflow:auto;background:#fff;padding:20px 0;min-height:180px}#copy{border:0;color:white;background:#123e63}#select{background:white;border:1px solid #cad7e3;color:#29445f}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}a.download{color:#123e63;padding-left:0}#status{min-height:24px;margin:12px 0 0;color:#315b46}.hint{font-size:13px;color:#677b8e;margin-top:16px}.setup{margin-top:24px}li{margin:8px 0}.note{padding:12px 16px;background:#eef3f8;border-radius:8px;font-size:13px}a{color:#165782}@media(max-width:760px){main{padding:28px 16px}.layout{grid-template-columns:1fr}h1{font-size:29px}.panel{padding:20px}}
+</style>
 </head>
-<body>
-<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333333;">
-  <tr>
-    <td style="padding-right: 20px; vertical-align: top; border-right: 3px solid #1a3a5c;">
-      <a href="http://peakliferx.com" target="_blank">
-        <img src="http://pwcbkupo.gensparkclaw.com/logo.png" alt="PeakLifeRx" width="120" style="display: block;">
-      </a>
-    </td>
-    <td style="padding-left: 20px; vertical-align: top;">
-      <p style="margin: 0 0 2px 0; font-size: 17px; font-weight: bold; color: #1a3a5c;">Greg McCranie</p>
-      <p style="margin: 0 0 10px 0; font-size: 13px; color: #4a7ab5; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">CEO / Owner</p>
-      <p style="margin: 0 0 4px 0; font-size: 13px; color: #555555;">
-        <span style="color: #1a3a5c;">📞</span>
-        <a href="tel:7273853271" style="color: #333333; text-decoration: none;">727-385-3271</a>
-      </p>
-      <p style="margin: 0 0 4px 0; font-size: 13px; color: #555555;">
-        <span style="color: #1a3a5c;">✉</span>
-        <a href="mailto:greg@peakliferx.com" style="color: #4a7ab5; text-decoration: none;">greg@peakliferx.com</a>
-      </p>
-      <p style="margin: 0; font-size: 13px; color: #555555;">
-        <span style="color: #1a3a5c;">🌐</span>
-        <a href="https://peakliferx.com" style="color: #4a7ab5; text-decoration: none;">peakliferx.com</a>
-      </p>
-    </td>
-  </tr>
-</table>
-</body>
-</html>
+<body><main>
+<div class="eyebrow">GMAC Ventures · Email tools</div>
+<h1>Your signature, ready to send.</h1>
+<p class="intro">Choose a company, check your details, then copy the signature into Gmail. The logos are hosted on PeakLifeRx.</p>
+<div class="companies" aria-label="Company"><button type="button" data-company="gmac" aria-pressed="true">GMAC Ventures</button><button type="button" data-company="peakliferx" aria-pressed="false">PeakLifeRx</button><button type="button" data-company="salesflo" aria-pressed="false">SalesFlo</button></div>
+<div class="layout">
+<section class="panel"><h2>Contact details</h2>
+<label for="name">Name</label><input id="name" autocomplete="name">
+<label for="title">Title</label><input id="title">
+<label for="email">Email address</label><input id="email" type="email" autocomplete="email" placeholder="Enter your sending email address">
+<label for="phone">Phone number</label><input id="phone" type="tel" autocomplete="tel">
+<label for="website">Website</label><input id="website" type="url" placeholder="https://example.com">
+<p class="hint">Edits update this preview only. They are not saved to the website or Gmail.</p>
+</section>
+<section class="panel"><h2 id="preview-heading">Signature preview</h2><div id="preview" class="preview" aria-labelledby="preview-heading"></div>
+<div class="actions"><button id="copy" type="button">Copy signature</button><button id="select" type="button">Select for manual copy</button></div>
+<p id="status" role="status" aria-live="polite"></p><a id="download" class="download" download="signature.html">Download HTML</a>
+<p class="hint" id="email-note"></p>
+</section></div>
+<section class="panel setup"><h2>Install in Gmail, use in Mimestream</h2><ol>
+<li>Click <strong>Copy signature</strong>. In Gmail, open <strong>Settings → See all settings → General → Signature</strong>.</li>
+<li>Create a signature and paste it into the editor. Choose the correct email address if you have multiple sending addresses.</li>
+<li>Under <strong>Signature defaults</strong>, choose it for <strong>new emails</strong>, and for replies if desired. Click <strong>Save Changes</strong>.</li>
+<li>In <strong>Mimestream → Settings → Signatures</strong>, choose the synced Gmail signature for the matching address.</li>
+</ol><p class="note">Mimestream syncs Gmail’s default signature for each sending address. Its local “On My Mac” signatures do not support images. Changing this page does not automatically update a signature already pasted into Gmail.</p>
+<a href="https://mimestream.com/help/user-guide/signatures" target="_blank" rel="noopener noreferrer">Mimestream signature instructions</a></section>
+</main><script src="/signature.js"></script></body></html>
